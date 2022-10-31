@@ -1,16 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
-        System.out.println("Mikekondo");
-        Member mikekondo = new Member();
-        Member keinkondo = mikekondo;
+       Item item = new Item();
+       item.printInfo();
 
-        mikekondo.setId(100);
-        System.out.println("mikekondoのid" + mikekondo.id);
-        System.out.println(keinkondo.id);
-
-        mikekondo.id = 200;
-
-        System.out.println(keinkondo.id);
+       Paper paper = new Paper();
+       paper.printInfo();
     }
 }

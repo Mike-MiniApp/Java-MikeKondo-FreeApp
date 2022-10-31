@@ -5,7 +5,7 @@ class Member {
         return id;
     }
 
-    void setId(int num) {
-        id = num;
+    void setId(int id) {
+        this.id = id;
     }
 }
