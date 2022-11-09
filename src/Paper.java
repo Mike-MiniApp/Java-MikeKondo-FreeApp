@@ -2,21 +2,20 @@ public class Paper extends Item {
     private String size;
     private int number;
 
-    public Paper(String name, int price, String size, int number) {
-        setName(name);
-        setPrice(price);
+    Paper(){
+        this("未定",0,"未定（コピー用紙)",0);
+    }
+
+    Paper(String name,int price,String size,int number){
+        super(name,price);
         this.size = size;
         this.number = number;
     }
 
-    public void printSizeNumber() {
-        System.out.println("用紙サイズ:" + size);
-        System.out.println("枚数:" + number);
-    }
-    public void printInfo() {
-        System.out.println("名前：" + getName());
-        System.out.println("価格：" +getPrice());
-        System.out.println("用紙サイズ:" + size);
-        System.out.println("枚数:" + number);
+    @Override
+    public void printInfo(){
+        super.printInfo();
+        System.out.println("用紙サイズ:"+size);
+        System.out.println("枚数:"+number);
     }
 }
