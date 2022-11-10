@@ -1,9 +1,9 @@
 public interface Printable {
-    String message = "Printableインターフェース";
+   String message = "Printableインタフェース";
 
-    void printInfo();
+   void printInfo();
 
-    default void printHello() {
-        System.out.println("Hello from Printable");
-    }
+   default void printHello(){
+       System.out.println("Hello world");
+   }
 }
