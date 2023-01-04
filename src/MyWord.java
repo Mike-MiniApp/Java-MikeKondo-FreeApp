@@ -1,15 +1,12 @@
 public class MyWord implements Printable {
-     private String myWord;
+    private String myWord;
 
-     MyWord(String myWord) {
-         this.myWord = myWord;
-     }
-     MyWord(){
-         this("未定");
-     }
+    MyWord(String myWord) {
+        this.myWord = myWord;
+    }
 
-     @Override
-     public void printInfo() {
-         System.out.println("座右の名:"+myWord);
-     }
+    @Override
+    public void printInfo() {
+        System.out.println(myWord);
+    }
 }

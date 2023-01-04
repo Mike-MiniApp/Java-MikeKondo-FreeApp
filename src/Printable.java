@@ -1,9 +1,8 @@
 public interface Printable {
-   String message = "Printableインタフェース";
+    String message = "Printableインタフェース"; // 自動的にstatic finalになる
+    void printInfo(); // 自動的にpublic abstractになる
 
-   void printInfo();
-
-   default void printHello(){
-       System.out.println("Hello world");
-   }
+    default void printHello() {
+        System.out.println("Hello from Printable");
+    }
 }
