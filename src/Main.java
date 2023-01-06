@@ -1,10 +1,18 @@
+import java.io.FileNotFoundException;
+
 public class Main {
     public static void main(String[] args) {
-       System.out.println("Printable.message:"+Printable.message);
-       System.out.println("Myword.message:"+MyWord.message);
+       System.out.println("main開始");
+       try {
+           file();
+       }catch(FileNotFoundException ex) {
+           System.out.println("例外発生:"+ex.getMessage());
+       }
+       System.out.println("main終了");
+    }
 
-       MyWord myWord = new MyWord("失敗は成功の元");
-       myWord.printInfo();
-       myWord.printHello();
+    public static void file() throws FileNotFoundException {
+        System.out.println("file");
+        throw new FileNotFoundException("ファイルが見つかりません");
     }
 }

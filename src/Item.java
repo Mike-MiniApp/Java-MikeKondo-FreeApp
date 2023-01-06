@@ -1,20 +1,13 @@
-public abstract class Item {
-   private String name;
-   private int price;
+public abstract class Item implements Printable {
+    protected String name;
+    protected int price;
 
-   Item(String name,int price) {
-       this.name = name;
-       this.price = price;
-   }
-
-   Item() {
-       this("未定",0);
-   }
-
-   void printInfo() {
-       System.out.println(name);
-       System.out.println(price);
-   }
-   abstract void printOptionInfo();
+    Item(String name, int price) {
+        this.name = name;
+        this.price = price;
+    }
+    Item() {
+        this("未定",0);
+    }
 }
 

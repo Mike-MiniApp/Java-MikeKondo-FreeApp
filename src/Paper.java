@@ -8,12 +8,10 @@ public class Paper extends Item {
         this.number = number;
     }
 
-    Paper() {
-        this("未定",0,"未定",0);
-    }
-
     @Override
-    void printOptionInfo() {
+    public void printInfo() {
+        System.out.println(name);
+        System.out.println(price);
         System.out.println(size);
         System.out.println(number);
     }
